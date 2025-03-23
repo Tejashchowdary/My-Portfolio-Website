@@ -10,6 +10,7 @@
    <!--icons-->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -268,44 +269,42 @@
      </div>
     </section>
 
-    <!-- contact section design-->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+   <!-- Contact Section Design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Adress" required>
-                    <span class="focus"></span>
-                </div>
-                
-            </div>
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="Number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-                
-            </div>
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <form id="contact-form">
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" id="name" name="user_name" placeholder="Full Name" required>
                 <span class="focus"></span>
-                
             </div>
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-                
+            <div class="input-field">
+                <input type="email" id="email" name="user_email" placeholder="Email Address" required>
+                <span class="focus"></span>
             </div>
-        </form>
-    </section>
+        </div>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="tel" id="mobile" name="user_mobile" placeholder="Mobile Number" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" id="subject" name="email_subject" placeholder="Email Subject" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+        <div class="textarea-field">
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <span class="focus"></span>
+        </div>
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+        <p id="status-message"></p> <!-- Status message for feedback -->
+    </form>
+</section>
+
 
     <!--footer section-->
     <footer class="footer" style="background-color:#081b29;">

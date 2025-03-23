@@ -63,3 +63,60 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("0mbM92v8lpGTAmsSl"); // Replace with your actual Public Key
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent page reload
+
+        let statusMessage = document.getElementById("status-message");
+        statusMessage.style.display = "none"; // Hide initially
+
+        // Get form values
+        let formData = {
+            user_name: document.getElementById("name").value,
+            user_email: document.getElementById("email").value,
+            user_mobile: document.getElementById("mobile").value,
+            email_subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_x296kgl", "template_k4j41f4", formData)
+            .then(
+                function (response) {
+                    console.log("Email sent successfully!", response);
+                    showMessage("Message sent successfully!", "success");
+                    document.getElementById("contact-form").reset(); // Clear form
+                },
+                function (error) {
+                    console.error("Failed to send email:", error);
+                    showMessage("Failed to send message. Try again.", "error");
+                }
+            );
+    });
+
+    // Function to toggle message visibility
+    function showMessage(text, type) {
+        let statusMessage = document.getElementById("status-message");
+
+        statusMessage.textContent = text;
+        statusMessage.classList.remove("success", "error"); // Remove previous classes
+
+        if (type === "success") {
+            statusMessage.classList.add("success");
+        } else {
+            statusMessage.classList.add("error");
+        }
+
+        statusMessage.style.display = "block"; // Show message
+
+        // Hide message after 3 seconds
+        setTimeout(() => {
+            statusMessage.style.display = "none";
+        }, 3000);
+    }
+});
+
+
