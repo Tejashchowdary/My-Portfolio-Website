@@ -5,7 +5,6 @@ let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-
 }
 
 // scroll sections
@@ -50,18 +49,31 @@ window.onscroll = () => {
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 
 }
-// project section js code
 document.addEventListener("DOMContentLoaded", () => {
-    const projectCards = document.querySelectorAll(".project-card");
+  const projectSection = document.getElementById("projects"); // FIXED ID
+  const scrollLeftBtn = document.getElementById("scroll-left");
+  const scrollRightBtn = document.getElementById("scroll-right");
 
-    projectCards.forEach(card => {
-        card.addEventListener("click", () => {
-            const link = card.querySelector(".project-link");
-            if (link) {
-                window.open(link.href, "_blank");
-            }
-        });
+  scrollLeftBtn.addEventListener("click", () => {
+    projectSection.scrollBy({ left: -300, behavior: "smooth" });
+  });
+
+  scrollRightBtn.addEventListener("click", () => {
+    projectSection.scrollBy({ left: 300, behavior: "smooth" });
+  });
+});
+
+
+// Add interactivity to education section cards
+document.addEventListener('DOMContentLoaded', () => {
+  const educationColumns = document.querySelectorAll('.education-column');
+
+  educationColumns.forEach((column) => {
+    column.addEventListener('click', () => {
+      // Toggle active class on click
+      column.classList.toggle('active');
     });
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -118,5 +130,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
 });
-
-

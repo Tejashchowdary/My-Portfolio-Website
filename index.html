@@ -146,66 +146,69 @@
 
     <!--skills section design-->
     <section class="skills" id="skills">
+            <div class="spline-wrapper">
+                <spline-viewer url="https://prod.spline.design/vuGQ-ygWRGxNw4AB/scene.splinecode"></spline-viewer>
+             </div>
         <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
         <div class="skills-container">
             <!-- Each skill is wrapped in a container -->
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/html.webp" alt="HTML">
+                   <i class='bx bxl-html5' style="color:#E34F26; font-size: 4rem;"></i>
                 </div>
                 <p>HTML</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/css3.png" alt="CSS">
+                   <i class='bx bxl-css3' style="color:#1572B6; font-size: 4rem;"></i>
                 </div>
                 <p>CSS</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/js.webp" alt="JavaScript">
+                   <i class='bx bxl-javascript' style="color:#F7DF1E; font-size: 4rem;"></i>
                 </div>
                 <p>JavaScript</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/react.png" alt="React">
+                   <i class='bx bxl-react' style="color:#61DAFB; font-size: 4rem;"></i>
                 </div>
                 <p>React</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/redux.png" alt="Redux">
+                   <i class='bx bxl-redux' style="color:#764ABC; font-size: 4rem;"></i>
                 </div>
                 <p>Redux</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/bootstrap.png" alt="Bootstrap">
+                   <i class='bx bxl-bootstrap' style="color:#7952B3; font-size: 4rem;"></i>
                 </div>
                 <p>Bootstrap</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/tailwind.png" alt="Tailwind">
+                   <i class='bx bxl-tailwind-css' style="color:#38B2AC; font-size: 4rem;"></i>
                 </div>
                 <p>Tailwind</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/git.png" alt="Git">
+                   <i class='bx bxl-git' style="color:#F05032; font-size: 4rem;"></i>
                 </div>
                 <p>Git</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/GitHub-logo.png" alt="GitHub">
+                   <i class='bx bxl-github' style="color:#181717; font-size: 4rem;"></i>
                 </div>
                 <p>GitHub</p>
             </div>
             <div class="skill-item">
                 <div class="skill">
-                   <img src="assets/REST-API.webp" alt="API">
+                   <i class='bx bx-code-alt' style="color:#61DAFB; font-size: 4rem;"></i>
                 </div>
                 <p>API</p>
             </div>
@@ -216,57 +219,82 @@
     <!--Projects section-->
     <section class="Projects" id="Projects">
         <h2 class="heading">My <span>Projects</span></h2>
-     <div id="projects" class="projects-section">
-        <div class="project-card">
-           <img src="assets/pexels-pixabay-270408.jpg" alt="Project 1">
-            <div class="project-info">
-                <h3>Project 1</h3>
-                <p>This is Animated Login page.</p>
-                <a href="https://myloginpage-umber.vercel.app/" class="project-link" target="_blank">View Project</a>
+        <div class="projects-section-container">
+            <div id="projects" class="projects-section">
+                 <div style="flex: 0 0 auto; width: 15px;"></div> <!-- Left spacer -->
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 1: Animated Login page">
+                    <img src="assets/pexels-pixabay-270408.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>This is Animated Login page.</p>
+                        <a href="https://myloginpage-umber.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 2: Temperature calculator">
+                    <img src="assets/tempimg.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>This is a temperature-calculator.</p>
+                        <a href="https://temperature-calculator-delta.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 3: Weather project">
+                    <img src="assets/weather img.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>This is a Weather project.</p>
+                        <a href="https://weather-project-three-snowy.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 4: Authentication with Thar Car ShowCase Website">
+                    <img src="assets/image1.jpg" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Project 4</h3>
+                        <p>Authentication with Thar Car ShowCase Website.</p>
+                        <a href="https://authentication-webiste.vercel.app/auth" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 5: TailWind-VirtualR">
+                    <img src="assets/VirtualR.png" alt="Project 5">
+                    <div class="project-info">
+                        <h3>Project 5</h3>
+                        <p>TailWind-VirtualR.</p>
+                        <a href="https://tailwind-virtual-r.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 8: IRON-Man showcase website">
+                    <img src="assets/Student record.png" alt="Project 8">
+                    <div class="project-info">
+                        <h3>Project 8</h3>
+                        <p>Student Records Management Website</p>
+                        <a href="https://github.com/Tejashchowdary/Student-Records" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 7: IRON-Man showcase website">
+                    <img src="assets/438803064-9b530dea-4f39-46d1-b548-a547999631a2.png" alt="Project 7">
+                    <div class="project-info">
+                        <h3>Project 7</h3>
+                        <p> Full-Stack MERN Developer - E-commerce Product Management Application</p>
+                        <a href="https://github.com/Tejashchowdary/Product_Store" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="0" role="button" aria-label="Project 6: IRON-Man showcase website">
+                    <img src="assets/Screenshot 2025-03-07 171639.png" alt="Project 6">
+                    <div class="project-info">
+                        <h3>Project 6</h3>
+                        <p>IRON-Man showcase website.</p>
+                        <a href="https://iron-man-omega.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                 <div style="flex: 0 0 auto; width: 30px;"></div> 
             </div>
+            <!-- Inside your HTML -->
+<div class="scroll-buttons">
+  <button id="scroll-left" aria-label="Scroll left">←</button>
+  <button id="scroll-right" aria-label="Scroll right">→</button>
+</div>
+
         </div>
-        <div class="project-card">
-           <img src="assets/tempimg.jpg" alt="Project 2">
-            <div class="project-info">
-                <h3>Project 2</h3>
-                <p>This is a temperature-calculator.</p>
-                <a href="https://temperature-calculator-delta.vercel.app/" class="project-link" target="_blank">View Project</a>
-            </div>
-        </div>
-        <div class="project-card">
-           <img src="assets/weather img.jpg" alt="Project 3">
-            <div class="project-info">
-                <h3>Project 3</h3>
-                <p>This is a Weather project.</p>
-                <a href="https://weather-project-three-snowy.vercel.app/" class="project-link" target="_blank">View Project</a>
-            </div>
-        </div>
-        <div class="project-card">
-           <img src="assets/image1.jpg" alt="Project 4">
-            <div class="project-info">
-                <h3>Project 4</h3>
-                <p>Authentication with Thar Car ShowCase Website.</p>
-                <a href="https://authentication-webiste.vercel.app/auth" class="project-link" target="_blank">View Project</a>
-            </div>
-        </div>
-        <div class="project-card">
-           <img src="assets/VirtualR.png" alt="Project 5">
-            <div class="project-info">
-                <h3>Project 5</h3>
-                <p>TailWind-VirtualR.</p>
-                <a href="https://tailwind-virtual-r.vercel.app/" class="project-link" target="_blank">View Project</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="assets/Screenshot 2025-03-07 171639.png" alt="Project 6">
-             <div class="project-info">
-                 <h3>Project 6</h3>
-                 <p>IRON-Man showcase website.</p>
-                 <a href="https://iron-man-omega.vercel.app/" class="project-link" target="_blank">View Project</a>
-             </div>
-         </div>
-        
-     </div>
     </section>
 
    <!-- Contact Section Design -->
